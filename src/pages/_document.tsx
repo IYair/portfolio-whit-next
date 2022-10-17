@@ -6,10 +6,14 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang={AppConfig.locale}>
-        <Head />
-        <body className=" overflow-hidden ounded-full h-screen w-screen bg-no-repeat bg-gradient-radial from-slate-600 via-slate-800 to-slate-900">
-          <Main />
-          <NextScript />
+        <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet" />
+          </Head>
+        <body className=" overflow-hidden ounded-full h-screen w-screen bg-no-repeat bg-gradient-radial from-vingateBlue to-midnigth">
+        <Main />
+        <NextScript />
         </body>
       </Html>
     );
